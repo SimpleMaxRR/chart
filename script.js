@@ -12,3 +12,9 @@ function animate(obj, target, callback) {
         }
     }, 15)
 }
+
+var left = document.getElementsByClassName('btn-lt')
+var right = document.getElementsByClassName('btn-rt')
+var chartUl = document.getElementsByClassName('chart-item-list')
+
+left.addEventListener('click', animate(chartUl, 400))
